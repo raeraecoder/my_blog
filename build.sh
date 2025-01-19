@@ -11,7 +11,4 @@ python manage.py migrate
 # then
 #     python manage.py createsuperuser 
 # fi
-if [[ $CREATE_SUPERUSER ]];
-then
-  python world_champ_2022/manage.py createsuperuser --no-input
-fi
+if [[-z $CREATE_SUPERUSER]]; then python manage.py createsuperuserfi
