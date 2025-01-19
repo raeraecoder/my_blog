@@ -9,5 +9,5 @@ python manage.py migrate
 
 if [[ $CREATE_SUPERUSER ]];
 then
-    python manage.py createsuperuser --no-input --user_name:"rae_rae"
+    python manage.py createsuperuser rae_rae
 fi
